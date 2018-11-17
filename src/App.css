@@ -2,8 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.App-logo-horaire {
+  animation: App-logo-spin-horaire infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-logo-anti-horaire {
+  animation: App-logo-spin-anti-horaire infinite 20s linear;
   height: 40vmin;
 }
 
@@ -22,11 +27,20 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-logo-spin-horaire {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin-anti-horaire {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
